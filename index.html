@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat - Realtime Node Socket.io Chat App</title>
+    <link rel="shortcut icon" href="./public/whatsapp_logo.png" type="image/x-icon">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="./scripts/client.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-purple-200">
+    <nav>
+        <img class="w-11 h-11 mx-auto my-10" src="./public/whatsapp_logo.png" alt="logo">
+    </nav>
+
+    <div class="container bg-red-200 h-96 mx-auto overflow-y-auto">
+        <div class="message right bg-gray-200 py-3 w-4/12 pl-2 mt-4 mr-4 rounded float-right clear-both">Harry: How are you?</div>
+        <div class="message left bg-gray-200 py-3 mt-28 w-4/12 pl-2 ml-4 rounded float-left clear-both">Rohan: I am fine, how about you?</div>
+    </div>
+
+    <div class="send text-center">
+        <form id="send-container" action="#">
+            <input class="w-10/12 py-2.5" type="text" name="messageInp" id="messageInp">
+            <button class="bg-orange-100 px-5 py-2.5" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
